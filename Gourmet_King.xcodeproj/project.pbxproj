@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8438A79A222A870400D12623 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8438A799222A870400D12623 /* MapKit.framework */; };
+		8438A79E222A999C00D12623 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8438A79D222A999C00D12623 /* MapViewController.swift */; };
 		84916ED32223E30500AAE7BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84916ED22223E30500AAE7BF /* AppDelegate.swift */; };
 		84916ED52223E30500AAE7BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84916ED42223E30500AAE7BF /* ViewController.swift */; };
 		84916ED82223E30500AAE7BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84916ED62223E30500AAE7BF /* Main.storyboard */; };
@@ -14,6 +16,9 @@
 		84916EDD2223E30800AAE7BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84916EDB2223E30800AAE7BF /* LaunchScreen.storyboard */; };
 		84916EE82223E30800AAE7BF /* Gourmet_KingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84916EE72223E30800AAE7BF /* Gourmet_KingTests.swift */; };
 		84916EF32223E30800AAE7BF /* Gourmet_KingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84916EF22223E30800AAE7BF /* Gourmet_KingUITests.swift */; };
+		84916F012223E87A00AAE7BF /* Slice.png in Resources */ = {isa = PBXBuildFile; fileRef = 84916F002223E87A00AAE7BF /* Slice.png */; };
+		84916F052223F0B400AAE7BF /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84916F032223F0B400AAE7BF /* Alamofire.framework */; };
+		84916F062223F0B400AAE7BF /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84916F042223F0B400AAE7BF /* SwiftyJSON.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8438A799222A870400D12623 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		8438A79D222A999C00D12623 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		84916ECF2223E30500AAE7BF /* Gourmet_King.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gourmet_King.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84916ED22223E30500AAE7BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84916ED42223E30500AAE7BF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +54,9 @@
 		84916EEE2223E30800AAE7BF /* Gourmet_KingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Gourmet_KingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84916EF22223E30800AAE7BF /* Gourmet_KingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gourmet_KingUITests.swift; sourceTree = "<group>"; };
 		84916EF42223E30800AAE7BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84916F002223E87A00AAE7BF /* Slice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Slice.png; path = ../../../Slice.png; sourceTree = "<group>"; };
+		84916F032223F0B400AAE7BF /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		84916F042223F0B400AAE7BF /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +64,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8438A79A222A870400D12623 /* MapKit.framework in Frameworks */,
+				84916F052223F0B400AAE7BF /* Alamofire.framework in Frameworks */,
+				84916F062223F0B400AAE7BF /* SwiftyJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,9 +91,9 @@
 			isa = PBXGroup;
 			children = (
 				84916ED12223E30500AAE7BF /* Gourmet_King */,
-				84916EE62223E30800AAE7BF /* Gourmet_KingTests */,
 				84916EF12223E30800AAE7BF /* Gourmet_KingUITests */,
 				84916ED02223E30500AAE7BF /* Products */,
+				84916F022223F0B400AAE7BF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,10 +112,13 @@
 			children = (
 				84916ED22223E30500AAE7BF /* AppDelegate.swift */,
 				84916ED42223E30500AAE7BF /* ViewController.swift */,
+				8438A79D222A999C00D12623 /* MapViewController.swift */,
 				84916ED62223E30500AAE7BF /* Main.storyboard */,
 				84916ED92223E30800AAE7BF /* Assets.xcassets */,
 				84916EDB2223E30800AAE7BF /* LaunchScreen.storyboard */,
 				84916EDE2223E30800AAE7BF /* Info.plist */,
+				84916F002223E87A00AAE7BF /* Slice.png */,
+				84916EE62223E30800AAE7BF /* Gourmet_KingTests */,
 			);
 			path = Gourmet_King;
 			sourceTree = "<group>";
@@ -125,6 +141,16 @@
 			path = Gourmet_KingUITests;
 			sourceTree = "<group>";
 		};
+		84916F022223F0B400AAE7BF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8438A799222A870400D12623 /* MapKit.framework */,
+				84916F032223F0B400AAE7BF /* Alamofire.framework */,
+				84916F042223F0B400AAE7BF /* SwiftyJSON.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,6 +161,7 @@
 				84916ECB2223E30500AAE7BF /* Sources */,
 				84916ECC2223E30500AAE7BF /* Frameworks */,
 				84916ECD2223E30500AAE7BF /* Resources */,
+				84916F072223F0E000AAE7BF /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -229,6 +256,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84916F012223E87A00AAE7BF /* Slice.png in Resources */,
 				84916EDD2223E30800AAE7BF /* LaunchScreen.storyboard in Resources */,
 				84916EDA2223E30800AAE7BF /* Assets.xcassets in Resources */,
 				84916ED82223E30500AAE7BF /* Main.storyboard in Resources */,
@@ -251,12 +279,35 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		84916F072223F0E000AAE7BF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		84916ECB2223E30500AAE7BF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				84916ED52223E30500AAE7BF /* ViewController.swift in Sources */,
+				8438A79E222A999C00D12623 /* MapViewController.swift in Sources */,
 				84916ED32223E30500AAE7BF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -434,12 +485,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S8D799H7U9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Gourmet_King/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.yoshiki.Gourmet-King";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yoshiki.Gourmet-Kingg";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -452,12 +507,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S8D799H7U9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Gourmet_King/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.yoshiki.Gourmet-King";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yoshiki.Gourmet-Kingg";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
