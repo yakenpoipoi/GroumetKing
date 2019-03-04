@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		8438A79A222A870400D12623 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8438A799222A870400D12623 /* MapKit.framework */; };
 		8438A79E222A999C00D12623 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8438A79D222A999C00D12623 /* MapViewController.swift */; };
+		8438A7A6222CC6FF00D12623 /* IMG_0122.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 8438A7A5222CC6FF00D12623 /* IMG_0122.JPG */; };
+		8438A7A8222CCAB300D12623 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8438A7A7222CCAB300D12623 /* TableViewController.swift */; };
+		8438A7AA222CD48D00D12623 /* testViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8438A7A9222CD48D00D12623 /* testViewController.swift */; };
 		84916ED32223E30500AAE7BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84916ED22223E30500AAE7BF /* AppDelegate.swift */; };
 		84916ED52223E30500AAE7BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84916ED42223E30500AAE7BF /* ViewController.swift */; };
 		84916ED82223E30500AAE7BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84916ED62223E30500AAE7BF /* Main.storyboard */; };
@@ -41,6 +44,9 @@
 /* Begin PBXFileReference section */
 		8438A799222A870400D12623 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		8438A79D222A999C00D12623 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		8438A7A5222CC6FF00D12623 /* IMG_0122.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = IMG_0122.JPG; path = ../../../../Downloads/IMG_0122.JPG; sourceTree = "<group>"; };
+		8438A7A7222CCAB300D12623 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		8438A7A9222CD48D00D12623 /* testViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testViewController.swift; sourceTree = "<group>"; };
 		84916ECF2223E30500AAE7BF /* Gourmet_King.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gourmet_King.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84916ED22223E30500AAE7BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84916ED42223E30500AAE7BF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -112,8 +118,11 @@
 			children = (
 				84916ED22223E30500AAE7BF /* AppDelegate.swift */,
 				84916ED42223E30500AAE7BF /* ViewController.swift */,
+				8438A7A7222CCAB300D12623 /* TableViewController.swift */,
 				8438A79D222A999C00D12623 /* MapViewController.swift */,
+				8438A7A9222CD48D00D12623 /* testViewController.swift */,
 				84916ED62223E30500AAE7BF /* Main.storyboard */,
+				8438A7A5222CC6FF00D12623 /* IMG_0122.JPG */,
 				84916ED92223E30800AAE7BF /* Assets.xcassets */,
 				84916EDB2223E30800AAE7BF /* LaunchScreen.storyboard */,
 				84916EDE2223E30800AAE7BF /* Info.plist */,
@@ -259,6 +268,7 @@
 				84916F012223E87A00AAE7BF /* Slice.png in Resources */,
 				84916EDD2223E30800AAE7BF /* LaunchScreen.storyboard in Resources */,
 				84916EDA2223E30800AAE7BF /* Assets.xcassets in Resources */,
+				8438A7A6222CC6FF00D12623 /* IMG_0122.JPG in Resources */,
 				84916ED82223E30500AAE7BF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -309,6 +319,8 @@
 				84916ED52223E30500AAE7BF /* ViewController.swift in Sources */,
 				8438A79E222A999C00D12623 /* MapViewController.swift in Sources */,
 				84916ED32223E30500AAE7BF /* AppDelegate.swift in Sources */,
+				8438A7AA222CD48D00D12623 /* testViewController.swift in Sources */,
+				8438A7A8222CCAB300D12623 /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -494,7 +506,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.yoshiki.Gourmet-Kingg";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yoshiki.Gourmet-King";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -516,7 +528,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.yoshiki.Gourmet-Kingg";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yoshiki.Gourmet-King";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
