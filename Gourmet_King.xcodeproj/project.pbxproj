@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		65B9F42F8B93E1ECC86D569E /* libPods-Gourmet_King.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CCCB938481B58B6EB6410451 /* libPods-Gourmet_King.a */; };
 		8438A79A222A870400D12623 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8438A799222A870400D12623 /* MapKit.framework */; };
 		8438A79E222A999C00D12623 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8438A79D222A999C00D12623 /* MapViewController.swift */; };
 		8438A7A6222CC6FF00D12623 /* IMG_0122.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 8438A7A5222CC6FF00D12623 /* IMG_0122.JPG */; };
 		8438A7A8222CCAB300D12623 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8438A7A7222CCAB300D12623 /* TableViewController.swift */; };
 		8438A7AA222CD48D00D12623 /* testViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8438A7A9222CD48D00D12623 /* testViewController.swift */; };
+		8438A7AC222CF3D800D12623 /* meal.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8438A7AB222CF3D800D12623 /* meal.jpg */; };
 		84916ED32223E30500AAE7BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84916ED22223E30500AAE7BF /* AppDelegate.swift */; };
 		84916ED52223E30500AAE7BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84916ED42223E30500AAE7BF /* ViewController.swift */; };
 		84916ED82223E30500AAE7BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84916ED62223E30500AAE7BF /* Main.storyboard */; };
@@ -22,6 +24,8 @@
 		84916F012223E87A00AAE7BF /* Slice.png in Resources */ = {isa = PBXBuildFile; fileRef = 84916F002223E87A00AAE7BF /* Slice.png */; };
 		84916F052223F0B400AAE7BF /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84916F032223F0B400AAE7BF /* Alamofire.framework */; };
 		84916F062223F0B400AAE7BF /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84916F042223F0B400AAE7BF /* SwiftyJSON.framework */; };
+		849B1BE2222D1BE0005DFDE4 /* MyUINavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849B1BE1222D1BE0005DFDE4 /* MyUINavigationViewController.swift */; };
+		849B1BE4222F947D005DFDE4 /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849B1BE3222F947D005DFDE4 /* NavigationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,7 @@
 		8438A7A5222CC6FF00D12623 /* IMG_0122.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = IMG_0122.JPG; path = ../../../../Downloads/IMG_0122.JPG; sourceTree = "<group>"; };
 		8438A7A7222CCAB300D12623 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		8438A7A9222CD48D00D12623 /* testViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testViewController.swift; sourceTree = "<group>"; };
+		8438A7AB222CF3D800D12623 /* meal.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = meal.jpg; path = ../../../../Downloads/meal.jpg; sourceTree = "<group>"; };
 		84916ECF2223E30500AAE7BF /* Gourmet_King.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gourmet_King.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84916ED22223E30500AAE7BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84916ED42223E30500AAE7BF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +68,11 @@
 		84916F002223E87A00AAE7BF /* Slice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Slice.png; path = ../../../Slice.png; sourceTree = "<group>"; };
 		84916F032223F0B400AAE7BF /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		84916F042223F0B400AAE7BF /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
+		849B1BE1222D1BE0005DFDE4 /* MyUINavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyUINavigationViewController.swift; sourceTree = "<group>"; };
+		849B1BE3222F947D005DFDE4 /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
+		A7F3D959DC69E6825C0A30EC /* Pods-Gourmet_King.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gourmet_King.release.xcconfig"; path = "Target Support Files/Pods-Gourmet_King/Pods-Gourmet_King.release.xcconfig"; sourceTree = "<group>"; };
+		CCCB938481B58B6EB6410451 /* libPods-Gourmet_King.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Gourmet_King.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2E1234571F5A3C9D42D1090 /* Pods-Gourmet_King.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gourmet_King.debug.xcconfig"; path = "Target Support Files/Pods-Gourmet_King/Pods-Gourmet_King.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +83,7 @@
 				8438A79A222A870400D12623 /* MapKit.framework in Frameworks */,
 				84916F052223F0B400AAE7BF /* Alamofire.framework in Frameworks */,
 				84916F062223F0B400AAE7BF /* SwiftyJSON.framework in Frameworks */,
+				65B9F42F8B93E1ECC86D569E /* libPods-Gourmet_King.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +111,7 @@
 				84916EF12223E30800AAE7BF /* Gourmet_KingUITests */,
 				84916ED02223E30500AAE7BF /* Products */,
 				84916F022223F0B400AAE7BF /* Frameworks */,
+				D1E9486FC304C94D758922FE /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -116,13 +128,16 @@
 		84916ED12223E30500AAE7BF /* Gourmet_King */ = {
 			isa = PBXGroup;
 			children = (
+				849B1BE0222D1BE0005DFDE4 /* UISpec */,
 				84916ED22223E30500AAE7BF /* AppDelegate.swift */,
 				84916ED42223E30500AAE7BF /* ViewController.swift */,
 				8438A7A7222CCAB300D12623 /* TableViewController.swift */,
+				849B1BE3222F947D005DFDE4 /* NavigationViewController.swift */,
 				8438A79D222A999C00D12623 /* MapViewController.swift */,
 				8438A7A9222CD48D00D12623 /* testViewController.swift */,
 				84916ED62223E30500AAE7BF /* Main.storyboard */,
 				8438A7A5222CC6FF00D12623 /* IMG_0122.JPG */,
+				8438A7AB222CF3D800D12623 /* meal.jpg */,
 				84916ED92223E30800AAE7BF /* Assets.xcassets */,
 				84916EDB2223E30800AAE7BF /* LaunchScreen.storyboard */,
 				84916EDE2223E30800AAE7BF /* Info.plist */,
@@ -156,8 +171,26 @@
 				8438A799222A870400D12623 /* MapKit.framework */,
 				84916F032223F0B400AAE7BF /* Alamofire.framework */,
 				84916F042223F0B400AAE7BF /* SwiftyJSON.framework */,
+				CCCB938481B58B6EB6410451 /* libPods-Gourmet_King.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		849B1BE0222D1BE0005DFDE4 /* UISpec */ = {
+			isa = PBXGroup;
+			children = (
+				849B1BE1222D1BE0005DFDE4 /* MyUINavigationViewController.swift */,
+			);
+			path = UISpec;
+			sourceTree = SOURCE_ROOT;
+		};
+		D1E9486FC304C94D758922FE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F2E1234571F5A3C9D42D1090 /* Pods-Gourmet_King.debug.xcconfig */,
+				A7F3D959DC69E6825C0A30EC /* Pods-Gourmet_King.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,10 +200,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84916EF72223E30800AAE7BF /* Build configuration list for PBXNativeTarget "Gourmet_King" */;
 			buildPhases = (
+				8B5A7A30D56A148C17A046F2 /* [CP] Check Pods Manifest.lock */,
 				84916ECB2223E30500AAE7BF /* Sources */,
 				84916ECC2223E30500AAE7BF /* Frameworks */,
 				84916ECD2223E30500AAE7BF /* Resources */,
 				84916F072223F0E000AAE7BF /* ShellScript */,
+				1D890356FCB446BBFC1BE4FC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -269,6 +304,7 @@
 				84916EDD2223E30800AAE7BF /* LaunchScreen.storyboard in Resources */,
 				84916EDA2223E30800AAE7BF /* Assets.xcassets in Resources */,
 				8438A7A6222CC6FF00D12623 /* IMG_0122.JPG in Resources */,
+				8438A7AC222CF3D800D12623 /* meal.jpg in Resources */,
 				84916ED82223E30500AAE7BF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -290,6 +326,30 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1D890356FCB446BBFC1BE4FC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Gourmet_King/Pods-Gourmet_King-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Gourmet_King/Pods-Gourmet_King-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		84916F072223F0E000AAE7BF /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -309,6 +369,28 @@
 			shellPath = /bin/sh;
 			shellScript = "/usr/local/bin/carthage copy-frameworks\n\n";
 		};
+		8B5A7A30D56A148C17A046F2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Gourmet_King-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -316,10 +398,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				849B1BE2222D1BE0005DFDE4 /* MyUINavigationViewController.swift in Sources */,
 				84916ED52223E30500AAE7BF /* ViewController.swift in Sources */,
 				8438A79E222A999C00D12623 /* MapViewController.swift in Sources */,
 				84916ED32223E30500AAE7BF /* AppDelegate.swift in Sources */,
 				8438A7AA222CD48D00D12623 /* testViewController.swift in Sources */,
+				849B1BE4222F947D005DFDE4 /* NavigationViewController.swift in Sources */,
 				8438A7A8222CCAB300D12623 /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -493,6 +577,7 @@
 		};
 		84916EF82223E30800AAE7BF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2E1234571F5A3C9D42D1090 /* Pods-Gourmet_King.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -515,6 +600,7 @@
 		};
 		84916EF92223E30800AAE7BF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7F3D959DC69E6825C0A30EC /* Pods-Gourmet_King.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

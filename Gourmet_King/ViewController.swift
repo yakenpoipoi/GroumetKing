@@ -16,7 +16,7 @@ import UIKit
 class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
     @IBOutlet var pickerView: UIPickerView!
-    let dataList: [String] = ["東京", "大阪", "福岡"]
+    let dataList: [String] = ["Tokyo", "Osaka", "Fukuoka"]
 
     
     
