@@ -7,6 +7,7 @@ class MapViewController: UIViewController, UISearchBarDelegate, GMSMapViewDelega
     var searchBar: UISearchBar!
     var num: Int = 1
    
+    @IBOutlet weak var name: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,6 +50,7 @@ class MapViewController: UIViewController, UISearchBarDelegate, GMSMapViewDelega
     }
     
     func setupSearchBar() { // searchBarの生成
+        
         if let navigationBarFrame = navigationController?.navigationBar.bounds {
             let searchBar: UISearchBar = UISearchBar(frame: navigationBarFrame)
             searchBar.delegate = self
@@ -61,6 +63,7 @@ class MapViewController: UIViewController, UISearchBarDelegate, GMSMapViewDelega
         }
         
     }
+    
     func searchBarShouldBeginEditing(_ searchBar: UISearchBar) -> Bool {
         searchBar.showsCancelButton = true
         return true
@@ -74,6 +77,7 @@ class MapViewController: UIViewController, UISearchBarDelegate, GMSMapViewDelega
     func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
         loadShop(word: searchBar.text!)
     }
+
     
     func loadShop(word: String) { //この中にGooglePlacesAPI
         
@@ -83,4 +87,28 @@ class MapViewController: UIViewController, UISearchBarDelegate, GMSMapViewDelega
         searchBar.resignFirstResponder()
     }
     
+}
+
+extension MapViewController: GMSAutocompleteViewControllerDelegate {
+    
+    func viewController(_ viewController: GMSAutocompleteViewController, didAutocompleteWith place: GMSPlace) {
+
+        name.text = place.name
+        print(place)
+        print("Place name: \(String(describing: place.name))")
+        print("Place address: \(String(describing: place.formattedAddress))")
+        print("Place attributions: \(String(describing: place.attributions))")
+        dismiss(animated: true, completion: nil)
+    }
+    
+    func viewController(_ viewController: GMSAutocompleteViewController, didFailAutocompleteWithError error: Error) {
+        print("Error: \(error)")
+        dismiss(animated: true, completion: nil)
+    }
+    
+    // User cancelled the operation.
+    func wasCancelled(_ viewController: GMSAutocompleteViewController) {
+        print("Autocomplete was cancelled.")
+        dismiss(animated: true, completion: nil)
+    }
 }
