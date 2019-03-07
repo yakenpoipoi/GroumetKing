@@ -24,7 +24,6 @@
 		84916F062223F0B400AAE7BF /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84916F042223F0B400AAE7BF /* SwiftyJSON.framework */; };
 		849B1BE2222D1BE0005DFDE4 /* MyUINavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849B1BE1222D1BE0005DFDE4 /* MyUINavigationViewController.swift */; };
 		849B1BE4222F947D005DFDE4 /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849B1BE3222F947D005DFDE4 /* NavigationViewController.swift */; };
-		84FBC7CA222FB331009F498B /* SearchBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FBC7C9222FB331009F498B /* SearchBarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,7 +66,6 @@
 		84916F042223F0B400AAE7BF /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 		849B1BE1222D1BE0005DFDE4 /* MyUINavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyUINavigationViewController.swift; sourceTree = "<group>"; };
 		849B1BE3222F947D005DFDE4 /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
-		84FBC7C9222FB331009F498B /* SearchBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarViewController.swift; sourceTree = "<group>"; };
 		A7F3D959DC69E6825C0A30EC /* Pods-Gourmet_King.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gourmet_King.release.xcconfig"; path = "Target Support Files/Pods-Gourmet_King/Pods-Gourmet_King.release.xcconfig"; sourceTree = "<group>"; };
 		CCCB938481B58B6EB6410451 /* libPods-Gourmet_King.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Gourmet_King.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2E1234571F5A3C9D42D1090 /* Pods-Gourmet_King.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gourmet_King.debug.xcconfig"; path = "Target Support Files/Pods-Gourmet_King/Pods-Gourmet_King.debug.xcconfig"; sourceTree = "<group>"; };
@@ -131,7 +129,6 @@
 				84916ED42223E30500AAE7BF /* ViewController.swift */,
 				849B1BE3222F947D005DFDE4 /* NavigationViewController.swift */,
 				8438A79D222A999C00D12623 /* MapViewController.swift */,
-				84FBC7C9222FB331009F498B /* SearchBarViewController.swift */,
 				84916ED62223E30500AAE7BF /* Main.storyboard */,
 				8438A7A5222CC6FF00D12623 /* IMG_0122.JPG */,
 				8438A7AB222CF3D800D12623 /* meal.jpg */,
@@ -397,7 +394,6 @@
 			files = (
 				849B1BE2222D1BE0005DFDE4 /* MyUINavigationViewController.swift in Sources */,
 				84916ED52223E30500AAE7BF /* ViewController.swift in Sources */,
-				84FBC7CA222FB331009F498B /* SearchBarViewController.swift in Sources */,
 				8438A79E222A999C00D12623 /* MapViewController.swift in Sources */,
 				84916ED32223E30500AAE7BF /* AppDelegate.swift in Sources */,
 				849B1BE4222F947D005DFDE4 /* NavigationViewController.swift in Sources */,

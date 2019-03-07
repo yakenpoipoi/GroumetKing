@@ -16,7 +16,7 @@ import UIKit
 class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
     @IBOutlet var pickerView: UIPickerView!
-    let dataList: [String] = ["Tokyo", "Osaka", "Fukuoka"]
+    let dataList: [String] = ["Tokyo", "NaGoya","Hyougo", "Yokohama", "Osaka", "Fukuoka"]
 
     
     
@@ -26,6 +26,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         pickerView.delegate = self
         pickerView.dataSource = self
         pickerView.showsSelectionIndicator = true
+//        pickerView.selectedRow(inComponent: 3) 初期値の設定
         
         let toolbar = UIToolbar(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: 50))
         let spacelItem = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: self, action: nil)
