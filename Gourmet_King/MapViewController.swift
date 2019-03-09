@@ -1,6 +1,13 @@
+// 自分の位置情報が出せない
+// 検索バーに入力したワードを読み込めない
+
+
+
 import UIKit
 import GoogleMaps
 import GooglePlaces
+import Alamofire
+import SwiftyJSON
 
 class MapViewController: UIViewController, UISearchBarDelegate, GMSMapViewDelegate{
     
@@ -11,12 +18,18 @@ class MapViewController: UIViewController, UISearchBarDelegate, GMSMapViewDelega
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        setupSearchBar()
+        setupSearchBar() 
         
         let camera = GMSCameraPosition.camera(withLatitude: 35.68154, longitude: 139.752498, zoom: 13)
         let mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
+        view = mapView
         mapView.isMyLocationEnabled = true
+        
+        if let mylocation = mapView.myLocation {
+            print("User's location: \(mylocation)")
+        } else {
+            print("User's location is unknown")
+        }
         self.view = mapView
         
         let marker = GMSMarker()
@@ -34,13 +47,6 @@ class MapViewController: UIViewController, UISearchBarDelegate, GMSMapViewDelega
         mapView.delegate = self
         self.view = mapView
         
-        // 現在の位置情報を入手
-        mapView.isMyLocationEnabled = true
-        if let mylocation = mapView.myLocation {
-            print("User's location: \(mylocation)")
-        } else {
-            print("User's location is unknown")
-        }
         
     }
     
@@ -77,11 +83,23 @@ class MapViewController: UIViewController, UISearchBarDelegate, GMSMapViewDelega
     func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
         loadShop(word: searchBar.text!)
     }
-
-    
     func loadShop(word: String) { //この中にGooglePlacesAPI
         
+        Alamofire.request("https://maps.googleapis.com/maps/api/place/findplacefromtext/output?key=AIzaSyDyQbUKJkjdUP_4LDvafoJLacf0X0V1Mhc&input=\(word)&inputtype=+81")
+            .responseJSON { response in
+                guard let object = response.result.value else {
+                    return
+                }
+            let json = JSON(object)
+            json.forEach { (_, json) in
+                print(json)
+            }
+//                let articles: [String:String?] = []
+
+            }
     }
+    
+
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         searchBar.resignFirstResponder()
