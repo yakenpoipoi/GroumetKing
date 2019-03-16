@@ -112,6 +112,7 @@ class MapViewController: UIViewController, UISearchBarDelegate, GMSMapViewDelega
                 marker.title = "The Imperial Palace"
                 marker.snippet = "Tokyo"
                 marker.map = mapView
+            
 
 //            }
         }

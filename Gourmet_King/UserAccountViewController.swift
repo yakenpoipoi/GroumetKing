@@ -25,6 +25,7 @@ class UserAccountViewController: UIViewController, GMSMapViewDelegate {
         let mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
         view = mapView
         
+        
         mapView.delegate = self
         
         mapView.isMyLocationEnabled = true // My Location
