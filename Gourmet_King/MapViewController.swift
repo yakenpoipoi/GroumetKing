@@ -89,32 +89,36 @@ class MapViewController: UIViewController, UISearchBarDelegate, GMSMapViewDelega
             guard let object = response.result.value else {
                 return
             }
-            
             let json = JSON(object)
-            
+
             print(json)
             
-//            json.forEach { (_, json) in
             
-                print(json)
-                
-                print(json[0]["geometry"]["location"]["lat"])  // latitudeは取り出せた
-                
-                let longitude = (json[0]["geometry"]["location"]["lat"].string! as NSString).doubleValue
-                let latitude = (json[0]["geometry"]["location"]["lng"].string! as NSString).doubleValue
-                
-                let camera = GMSCameraPosition.camera(withLatitude: latitude, longitude: longitude, zoom: 13)
-                let mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
-                self.view = mapView
-                
-                let marker = GMSMarker()  //開いた画面の表示の中心のピンの情報
-                marker.position = CLLocationCoordinate2DMake(latitude, longitude)
-                marker.title = "The Imperial Palace"
-                marker.snippet = "Tokyo"
-                marker.map = mapView
+            if let candidates = json["candidates"] as? [[String: Any]] {
+                for candidate in candidates {
+                    let longitude = candidate["geometry"]["location"]["lat"].double
+                    print(longitude!)
+                    let latitude = candidate["geometry"]["location"]["lat"].double
+                    print(latitude!)
+                }
+            }
             
+     
+//            print(json["geometry"]["location"]["lat"])  // latitudeは取り出せた
+            
+//            let longitude = (json["geometry"]["location"]["lat"].string! as NSString).double
+//            let latitude = (json["geometry"]["location"]["lng"].string! as NSString).double
+            
+//            let camera = GMSCameraPosition.camera(withLatitude: latitude, longitude: longitude, zoom: 13)
+//            let mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
+//            self.view = mapView
+//
+//            let marker = GMSMarker()  //開いた画面の表示の中心のピンの情報
+//            marker.position = CLLocationCoordinate2DMake(latitude, longitude)
+//            marker.title = "The Imperial Palace"
+//            marker.snippet = "Tokyo"
+//            marker.map = mapView
 
-//            }
         }
     }
     
